@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Survey Form | Heat Index
+    </title>
+    <style>
+
+        body {
+            background-image: url("start2.jpg");
+            font-family: Verdana;
+            margin: 0;
+            background-size: 100% auto;
+        }
+
+        .Q1, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8, .Q9, .Q10 {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 40px 80px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            border: 5px solid green;
+        }
+
+        h4 {
+            text-align: left;
+            margin-bottom: 25px;
+            color: black;
+        }
+
+            h4:hover {
+                color: #8b0000;
+                -webkit-transform: scale(1.03);
+                transform: scale(1.03);
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+            }
+
+        select {
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        form {
+            font-size: large;
+        }
+
+        h1 {
+            color: green;
+            text-align: center;
+        }
+
+            h1:hover {
+                color: black;
+                -webkit-transform: scale(1.03);
+                transform: scale(1.03);
+                text-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+            }
+
+        .radio:hover {
+            -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+        }
+
+        button {
+            font-family: "Roboto",sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            background: green;
+            width: 180px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            cursor: pointer;
+            bottom: auto;
+            border-radius: 8px;
+            position: relative;
+            bottom: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: box-shadow, transform;
+            transition-property: box-shadow, transform;
+            left: 23.5%;
+        }
+    </style>
+</head>
+<body>
+    <form></form>
+    <h1>Survey Form</h1>
+    <div class="Q1" id="s">
+        <h4>1. Do you find the heat index affecting your ability to concentrate in class?</h4>
+        <input type="radio" id="ConcentrationYes" name="Concentration" value="Yes" />
+        <label for="ConcentrationYes"> Yes</label>
+        <br>
+        <input type="radio" id="ConcentrationNo" name="Concentration" value="No" />
+        <label for="ConcentrationNo"> No</label>
+    </div>
+
+    <div class="Q2" id="s">
+        <h4>2. Have you ever felt sick or unwell due to the heat at school?</h4>
+        <input type="radio" id="FeelSickYes" name="FeelSick" value="Yes" />
+        <label for="FeelSickYes"> Yes</label>
+        <br>
+        <input type="radio" id="FeelSickNo" name="FeelSick" value="No" />
+        <label for="FeelSickNo"> No</label>
+    </div>
+
+    <div class="Q3" id="s">
+        <h4>3. Do you think the school should provide additional ways to cool down during hot weather?</h4>
+        <input type="radio" id="AddWaysYes" name="AddWays" value="Yes" />
+        <label for="AddWaysYes"> Yes</label>
+        <br>
+        <input type="radio" id="AddWaysNo" name="AddWays" value="No" />
+        <label for="AddWaysNo"> No</label>
+    </div>
+
+    <div class="Q4" id="s">
+        <h4>4. Do you think the heat index affects your academic performance?</h4>
+        <input type="radio" id="AffectAcadsYes" name="AffectAcads" value="Yes" />
+        <label for="AffectAcadsYes"> Yes</label>
+        <br>
+        <input type="radio" id="AffectAcadsNo" name="AffectAcads" value="No" />
+        <label for="AffectAcadsNo"> No</label>
+    </div>
+
+
+    <div class="Q5" id="s">
+        <h4>5. Have you ever had to skip outdoor activities or sports because of the heat?</h4>
+        <input type="radio" id="SkipSportsYes" name="SkipSports" value="Yes" />
+        <label for="SkipSportsYes"> Yes</label>
+        <br>
+        <input type="radio" id="SkipSportsNo" name="SkipSports" value="No" />
+        <label for="SkipSportsNo"> No</label>
+    </div>
+
+    <div class="Q6" id="s">
+        <h4>6. Do you think the school should adjust the schedule during the hot season?</h4>
+        <input type="radio" id="AdjustSchedYes" name="AdjustSched" value="Yes" />
+        <label for="AdjustSchedYes"> Yes</label>
+        <br>
+        <input type="radio" id="AdjustSchedNo" name="AdjustSched" value="No" />
+        <label for="AdjustSchedNo"> No</label>
+    </div>
+
+    <div class="Q7" id="s">
+        <h4>7. In 5 days of school, how many times do you wear your school uniform regardless of the heat?</h4>
+        <select name="Uniform" id="Uniform">
+            <option value="1" id="One">One</option>
+            <option value="2" id="Two">Two</option>
+            <option value="3" id="Three">Three</option>
+            <option value="4" id="Four">Four</option>
+            <option value="5" id="Five">Five</option>
+        </select>
+    </div>
+
+    <div class="Q8" id="s"> 
+        <h4>8. How many milliliters/liters of water do you consume in a day?</h4>
+        <label for="lessthan" name="Water">
+            <input type="radio" id="lessthan" name="Water" value="Less than 500mL" /> Less than 500mL
+        </label>
+        <br>
+        <input type="radio" id="between" name="Water" value="Between 500mL-1L" /> Between 500mL-1L
+        </label>
+        <br>
+        <input type="radio" id="morethan" name="Water" value="More than 1L" /> More than 1L
+        </label>
+    </div>
+
+    <div class="Q9" id="s">
+        <h4>9. How do you usually stay cool during hot weather at school?</h4>
+        <label for="Fan" name="How">
+            <input type="checkbox" id="Fan" name="Fan" /> Bringing a Portable Fan
+        </label>
+        <br>
+        <label for="WaterIce" name="How">
+            <input type="checkbox" id="WaterIce" name="WaterIce" /> Drinking water with Ice
+        </label>
+        <br>
+        <label for="InsideClass" name="How">
+            <input type="checkbox" id="InsideClass" name="InsideClass" /> Staying Inside the Classroom
+        </label>
+        <br>
+        <label for="BuyColdSnacks" name="How">
+            <input type="checkbox" id="BuyColdSnacks" name="BuyColdSnacks" /> Buying a Cold Beverage or Snacks
+        </label>
+    </div>
+
+    <div class="Q10" id="s">
+        <h4>10. Do you have any suggestions for how the school can help students cope with the heat index?</h4>
+        <label for="comment" name="Suggestions">
+            <textarea cols="65" rows="10" id="comment" name="comment" placeholder="Put your suggestions here"></textarea>
+        </label>
+    </div>
+
+
+    <script>
+        function One() {
+
+            let Q1 = document.querySelector('input[name="Concentration"]:checked').value;
+            let Q2 = document.querySelector('input[name="FeelSick"]:checked').value;
+            let Q3 = document.querySelector('input[name="AddWays"]:checked').value;
+            let Q4 = document.querySelector('input[name="AffectAcads"]:checked').value;
+            let Q5 = document.querySelector('input[name="SkipSports"]:checked').value;
+            let Q6 = document.querySelector('input[name="AdjustSched"]:checked').value;
+            let Q7 = document.getElementById('Uniform').value;
+            let Q8 = document.querySelector('input[name="Water"]:checked').value;
+            let Q9 = Array.from(document.querySelectorAll('input[name="How"]:checked')).map(input => input.value);
+            let Q10 = document.getElementById('comment').value;
+
+            localStorage.setItem('AffectConcentration', Q1);
+            localStorage.setItem('Unwell', Q2);
+            localStorage.setItem('AddWays', Q3);
+            localStorage.setItem('AffectsAcads', Q4);
+            localStorage.setItem('SkipSports', Q5);
+            localStorage.setItem('AdjustSchedule', Q6);
+            localStorage.setItem('Uniform', Q7);
+            localStorage.setItem('Water', Q8);
+            localStorage.setItem('HowdoyouCool', Q9);
+            localStorage.setItem('Suggestions', Q10);
+
+        }
+    </script>
+        <button onclick="One()">Submit</button>
+    </div>
+
+</body>
+
+
+</html>
